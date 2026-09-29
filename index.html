@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome CDN link for getting info from the browser-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <meta name="description" content="Find places to explore, memorable experiences, and travel inspiration with Trip Advisor.">
+    <title>Trip Advisor | Find Your Next Adventure</title>
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div class="navbar">
+        <div class="navbar--logo">
+            <img src="images/tripadvisor.png" alt="Trip Advisor logo">
+            <div class="navbar--logo__name">
+                <h3>Trip Advisor</h3>
+            </div>
+        </div>
+
+        <nav class="navbar--menu" aria-label="Main navigation">
+            <a href="#travel-search">Plan With AI</a>
+            <a href="#interests">Discover</a>
+            <a href="#experiences">Review</a>
+            <a href="#destinations">More</a>
+            <a class="contact-link" href="#contact">Contact Us</a>
+            <button class="login" type="button">Sign In</button>
+        </nav>
+    </div>
+
+    <!--after navbar heading-->
+    <div class="explore--desc">
+        <p class="hero-eyebrow">TRAVEL INSPIRATION</p>
+        <h1>What would you like to explore?</h1>
+        <p class="hero-note">Find places to stay, eat, and explore.</p>
+    </div>
+
+    <div class="search-types">
+        <button class="selected" type="button">Search All</button>
+        <button type="button">Things to Do</button>
+        <button type="button">Hotels</button>
+        <button type="button">Restaurants</button>
+    </div>
+    <!--travel search bar-->
+    <div class="search" role="search">
+        <div class="input--icon">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input
+                type="search"
+                id="travel-search"
+                placeholder="Places to go, things to do, hotels..."
+                aria-label="Search places, activities, and hotels">
+        </div>
+
+        <div class="search--actions">
+            <button class="ask-ai" type="button">Ask AI</button>
+            <button class="search-button" type="button">Search</button>
+        </div>
+    </div>
+
+    <!-- featured travel container -->
+    <section class="promo-banner">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" alt="A scenic outdoor travel adventure">
+        <div class="promo-content">
+            <h2>Your next adventure starts here</h2>
+            <p>Discover memorable experiences and plan your next adventure.</p>
+            <a href="#interests">Explore experiences</a>
+        </div>
+    </section>
+    <!-- things to do by interest -->
+    <section class="page-section" id="interests">
+        <p class="section-quote">“Find the kind of trip that feels like you.”</p>
+        <h2>Find things to do for everything you're into</h2>
+        <p class="section-note">Choose something you love and start exploring.</p>
+        <div class="card-row">
+            <div class="travel-card"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Mountain peaks"><div class="card-info"><h3>Outdoors</h3><p>Trails, views, and fresh air</p></div></div>
+            <div class="travel-card"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="A meal to share"><div class="card-info"><h3>Food</h3><p>Local flavors to discover</p></div></div>
+            <div class="travel-card"><img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=900&q=80" alt="The Taj Mahal"><div class="card-info"><h3>Culture</h3><p>Stories, art, and history</p></div></div>
+            <div class="travel-card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="A sunny beach"><div class="card-info"><h3>Beaches</h3><p>Sunny days by the water</p></div></div>
+        </div>
+    </section>
+
+    <!-- featured experiences -->
+    <section class="page-section" id="experiences">
+        <p class="section-quote">“The best memories start with a small adventure.”</p>
+        <h2>Must-dos in amazing places</h2>
+        <p class="section-note">Experiences we think you'll love.</p>
+        <div class="card-row">
+            <div class="travel-card">
+                <img src="https://www.have-clothes-will-travel.com/wp-content/uploads/2025/06/shutterstock_2490807341.jpg" alt="Boats at a Bangkok floating market">
+                <div class="card-info">
+                    <p class="card-place">Bangkok</p>
+                    <h3>Half-Day Floating Market and Railway Market Tour from Bangkok</h3>
+                    <div class="rating-line"><span>4.6</span><span class="rating-dots">●●●●◐</span><span class="review-count">(2,634)</span></div>
+                    <p class="price">from ₹2,514 per adult</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="https://www.pelago.com/img/products/IN-India/panjim-heritage-walk-with-professional-guide-and-refreshments/9d2f7004-5374-4740-9cba-df0222ea6a27_panjim-heritage-walk-with-professional-guide-and-refreshments-xlarge.jpg" alt="Colorful buildings in Panjim">
+                <div class="card-info">
+                    <p class="card-place">Panjim</p>
+                    <h3>Fontainhas Heritage Walk by Make It Happen</h3>
+                    <div class="rating-line"><span>4.9</span><span class="rating-dots">●●●●●</span><span class="review-count">(2,930)</span></div>
+                    <p class="price">from ₹1,400 per adult</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img src="https://image.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-01/Ninh%20Binh%20Vietnam%20Travel-5.jpg?itok=oBg4JugG" alt="Boat trip through the mountains of Ninh Binh">
+                <div class="card-info">
+                    <p class="card-place">Hanoi</p>
+                    <h3>Ninh Binh Day Tour from Hanoi with Boat and Bike</h3>
+                    <div class="rating-line"><span>4.9</span><span class="rating-dots">●●●●●</span><span class="review-count">(4,374)</span></div>
+                    <p class="price">from ₹3,240 per adult</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- popular destinations -->
+    <section class="page-section" id="destinations">
+        <p class="section-quote">“A new favourite place is waiting for you.”</p>
+        <h2>Popular places to explore</h2>
+        <p class="section-note">Start planning your next getaway.</p>
+        <div class="card-row">
+            <div class="travel-card"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80" alt="Beach in Goa"><div class="card-info"><h3>Goa</h3><p>Beaches and coastal escapes</p></div></div>
+            <div class="travel-card"><img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=900&q=80" alt="Jaipur city"><div class="card-info"><h3>Jaipur</h3><p>Colorful streets and history</p></div></div>
+            <div class="travel-card"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Green mountain scenery"><div class="card-info"><h3>Munnar</h3><p>Green hills and tea gardens</p></div></div>
+            <div class="travel-card"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Snowy mountain peaks"><div class="card-info"><h3>Manali</h3><p>Mountain air and adventure</p></div></div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or feedback? We'd love to hear from you.</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Your name" aria-label="Your name">
+            <input type="email" placeholder="Your email" aria-label="Your email">
+            <textarea rows="4" placeholder="Write your message..." aria-label="Your message"></textarea>
+            <button type="button">Send Message</button>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <h2>Trip Advisor</h2>
+        <p>Find a place, plan a trip, and make good memories.</p>
+        <div class="footer-links">
+            <a href="#interests">Things to do</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p class="copyright">© 2026 Trip Advisor travel project</p>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
